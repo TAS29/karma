@@ -53,8 +53,11 @@ class _KarmaDriveState extends State<KarmaDrive> {
                     Container(
                       width: 125,
                       decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            topRight: Radius.circular(20)),
+                      ),
                       child: Center(
                         child: Text(
                           'My Drives'.toUpperCase(),
